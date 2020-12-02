@@ -36,7 +36,7 @@ class st2::stanley (
   st2::user { $username:
     client            => $client,
     server            => $server,
-    create_sudo_entry => true,
+    create_sudo_entry => false,
     groups            => 'st2packs',
     ssh_public_key    => $ssh_public_key,
     ssh_key_type      => $ssh_key_type,
